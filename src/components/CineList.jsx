@@ -1,20 +1,29 @@
-function CineList({ peliculas }) {
-  return (
-    <div>
-      <h2>Listado de Películas</h2>
+import { useEffect, useState } from "react";
+import peliculasData from "../peliculas.json";
 
-      {peliculas.length === 0 && <p>No hay películas cargadas.</p>}
+function CineList() {
+  
+    const [peliculas, setPeliculas] = useState([]);
 
-      {peliculas.map((peli) => (
-        <div key={peli.id} className="movie-item">
-          <div className="movie-title">{peli.titulo}</div>
-          <div className="movie-meta">
-            Año: {peli.anio} — Género: {peli.genero}
-          </div>
+    // Cargar las peliculas al iniciar
+    useEffect(() => {
+        setPeliculas(peliculasData);
+    }, []);
+
+    return (
+        <div>
+            <h2>Listado de Películas</h2>
+
+            <ul>
+                {peliculas.map((peli) => (
+                    <li key={peli.id}>
+                        {peli.titulo} ({peli.anio}) - {peli.genero}
+                    </li>
+                ))}
+            </ul>
+            
         </div>
-      ))}
-    </div>
-  );
+    );
 }
 
 export default CineList;

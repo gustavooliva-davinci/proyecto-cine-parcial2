@@ -1,0 +1,20 @@
+[ 
+    { 
+        "id": 501, 
+        "titulo": "Scott Pilgrim vs The World", 
+        "anio": 2014, 
+        "genero": "Ciencia ficción" 
+    }, 
+    { 
+        "id": 502, 
+        "titulo": "Duro de Matar 4", 
+        "anio": 2008, 
+        "genero": "Acción" 
+    }, 
+    { 
+        "id": 503, 
+        "titulo": "Advengers End Game", 
+        "anio": 2022, 
+        "genero": "Ciencia ficción" 
+    } 
+]

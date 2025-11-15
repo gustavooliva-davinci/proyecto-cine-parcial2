@@ -1,64 +1,197 @@
-body {
-  background-color: #f4f4f4;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+body { 
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; 
+    background: linear-gradient(135deg, #141e30, #243b55); 
+    color: #fff; 
+    margin: 0; 
+    padding: 20px; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
 
-.container {
-  background: white;
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+h1 { 
+    text-align: center; 
+    margin-bottom: 25px; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    color: #ffda79; 
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.7); 
+    animation: fadeInDown 0.8s ease; } 
+    
+/* Formulario */ 
+form { 
+    display: flex; 
+    gap: 12px; 
+    justify-content: center; 
+    margin-bottom: 20px; 
+    flex-wrap: wrap; 
+    padding: 15px; 
+    background: rgba(255, 255, 255, 0.08); 
+    border-radius: 18px; 
+    box-shadow: 0 4px 14px rgba(0,0,0,0.5); 
+    backdrop-filter: blur(8px); 
+    animation: fadeIn 1s ease; 
+} 
 
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+form input, .buscador input { 
+    padding: 12px 16px; 
+    border: none; 
+    border-radius: 12px; 
+    font-size: 1rem; 
+    outline: none; 
+    min-width: 180px; 
+    background: rgba(255, 255, 255, 0.15); 
+    color: #fff; 
+    backdrop-filter: blur(6px); 
+    transition: 0.3s ease; } 
+    
+form input:focus, .buscador input:focus { 
+    background: rgba(255, 255, 255, 0.25); 
+    box-shadow: 0px 0px 12px #4d79da; 
+} 
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+form button { 
+    background: linear-gradient(135deg, #ff4757, #ff6b81); 
+    border: none; 
+    border-radius: 12px; 
+    padding: 12px 22px; 
+    font-size: 1rem; 
+    font-weight: bold; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4); 
+} 
 
-input, select {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid gray;
-}
+form button:hover { 
+    background: linear-gradient(135deg, #ff6b81, #ff4757); 
+    transform: scale(1.07); } 
+    
+/* Buscador */ 
+.buscador { 
+    text-align: center; 
+    margin: 20px 0; 
+} 
 
-button {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
+.buscador input { 
+    width: 65%; 
+    max-width: 450px; 
+    border: 2px solid transparent; 
+    transition: border 0.3s ease; 
+} 
 
-button:hover {
-  background-color: #0056b3;
-}
+.buscador input:focus { 
+    border: 2px solid #ffda79; 
+} 
 
-.movie-item {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-}
+/* Lista de películas */ 
+#lista_peliculas { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+    gap: 18px; 
+    list-style: none; 
+    padding: 0; 
+    width: 100%; 
+    max-width: 1000px; 
+    animation: fadeInUp 1s ease; 
+} 
 
-.movie-item:last-child {
-  border-bottom: none;
-}
+/* Tarjetas */ 
+#lista_peliculas li.tarjeta { 
+    background: rgba(255, 255, 255, 0.12); 
+    border-radius: 16px; 
+    padding: 18px; 
+    text-align: center; 
+    backdrop-filter: blur(6px); 
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); 
+    transition: 0.3s ease; 
+    animation: fadeIn 0.6s ease; 
+} 
 
-.movie-title {
-  font-size: 18px;
-  font-weight: bold;
-}
+#lista_peliculas li.tarjeta:hover { 
+    transform: translateY(-6px) scale(1.02); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+} 
 
-.movie-meta {
-  color: #555;
-  font-size: 14px;
+#lista_peliculas li.tarjeta span { 
+    display: block; 
+    color: #ffda79; 
+    font-size: 1.1rem; 
+    margin-bottom: 12px; 
+    font-weight: 500; 
+} 
+
+/* Botón eliminar */ 
+.btn-eliminar { 
+    background: linear-gradient(135deg, #e84118, #ff4757); 
+    border: none; 
+    border-radius: 10px; 
+    padding: 9px 16px; 
+    font-size: 0.9rem; 
+    color: #fff; 
+    cursor: pointer; 
+    transition: 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); 
+} 
+
+.btn-eliminar:hover { 
+    background: linear-gradient(135deg, #ff4757, #e84118); 
+    transform: scale(1.12); 
+} 
+
+/* Animaciones */ 
+@keyframes fadeIn { 
+    from {opacity: 0;} to {opacity: 1;} 
+} 
+@keyframes fadeInDown { 
+    from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} 
+} 
+@keyframes fadeInUp { 
+    from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);} 
+} 
+
+.header { 
+    text-align: center; 
+    margin-bottom: 20px; 
+} 
+
+.header h1 { 
+    font-size: 2.8rem; 
+    color: #ffda79; 
+    text-shadow: 3px 3px 14px rgba(0, 0, 0, 0.8); 
+} 
+
+.subtitulo { 
+    font-size: 1.2rem; 
+    color: #dcdcdc; 
+    margin-top: -10px; 
+    margin-bottom: 20px; 
+    font-style: italic; 
+} 
+
+.intro { 
+    max-width: 800px; 
+    margin: 0 auto 25px; 
+    padding: 15px 20px; 
+    background: rgba(255, 255, 255, 0.08); 
+    border-radius: 16px; text-align: center; 
+    line-height: 1.6; 
+    font-size: 1.05rem; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5); 
+} 
+
+.footer { 
+    margin-top: 40px; 
+    padding: 20px; 
+    text-align: center; 
+    background: rgba(255, 255, 255, 0.08); 
+    border-radius: 16px 16px 0 0; 
+    font-size: 0.95rem; 
+    color: #ccc; 
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.4); 
+} 
+
+.footer p { 
+    margin: 6px 0; 
 }
