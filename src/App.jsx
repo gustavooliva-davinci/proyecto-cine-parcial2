@@ -1,23 +1,19 @@
-//import { useState } from "react";
-import "./styles.css";
-import "./styles/cine.css";
-
-//import CineForm from "./components/CineForm";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CineList from "./components/CineList";
-import "./App.css";
-
-//import peliculasIniciales from "./data/peliculas.json";
+import CineDetail from "./components/CineDetail";
+import "./styles/styles.css";
 
 function App() {
-
   return (
-    <>
-      <h1>Cartelera de Cine Independiente</h1>
+    <BrowserRouter>
+      <h1 className="title"> Proyecto de Cine Independiente</h1>
 
-      <CineList />
-    </>
+      <Routes>
+        <Route path="/" element={<CineList />} />
+        <Route path="/cine/:id" element={<CineDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
-
 }
 
 export default App;
