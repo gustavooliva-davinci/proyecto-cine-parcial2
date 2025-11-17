@@ -2,7 +2,7 @@
     { 
         "id": 501, 
         "titulo": "Scott Pilgrim vs The World", 
-        "descripcion": "Descripción...",
+        "descripcion": "Scott Pilgrim es un joven músico canadiense que se enamora de la misteriosa Ramona Flowers. Para conquistarla, deberá enfrentarse a sus siete exnovios malvados en batallas épicas llenas de humor, acción y estética de videojuego. Con un estilo visual único, la película mezcla romance, comedia y peleas surrealistas, convirtiéndose en una experiencia vibrante y explosiva que celebra la cultura pop y los cómics.",
         "anio": 2014, 
         "genero": "Ciencia ficción",
         "imagen": "/imagenes/scott_pilgrim.jpg" 
@@ -10,7 +10,7 @@
     { 
         "id": 502, 
         "titulo": "Duro de Matar 4", 
-        "descripcion": "Descripción...",
+        "descripcion": "John McClane regresa para enfrentar un nuevo tipo de amenaza: un ciberataque que paraliza Estados Unidos. Con la ayuda de un joven hacker, deberá detener a un grupo de terroristas tecnológicos que buscan controlar todo el sistema digital del país. Explosiones, persecuciones y la clásica actitud desafiante de McClane hacen de esta entrega un thriller lleno de adrenalina, donde la acción se moderniza sin perder el espíritu de la saga.",
         "anio": 2008, 
         "genero": "Acción",
         "imagen": "/imagenes/duro_de_matar_4.jpg" 
@@ -18,7 +18,7 @@
     { 
         "id": 503, 
         "titulo": "Advengers End Game", 
-        "descripcion": "Descripción...",
+        "descripcion": "Tras el devastador chasquido de Thanos, los Vengadores restantes deben unirse para revertir la destrucción y salvar el universo. Con viajes en el tiempo, sacrificios heroicos y batallas colosales, la película culmina más de una década de historias interconectadas del Universo Marvel. “Endgame” es un épico cierre cargado de emoción, acción y despedidas memorables, que celebra la unión de héroes frente a lo imposible y marca un antes y un después en la historia del cine de superhéroes.",
         "anio": 2022, 
         "genero": "Ciencia ficción",
         "imagen": "/imagenes/advengers_end_game.jpg"  

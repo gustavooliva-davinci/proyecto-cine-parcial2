@@ -1,12 +1,22 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import peliculasData from "../peliculas.json";
 import "../styles/cine.css";
 
 function CineDetail() {
+    
     const { id } = useParams();
-    const pelicula = peliculasData.find((p) => p.id === Number(id));
+    const pelicula = peliculasData.find((p) => p.id === parseInt(id));
 
-    if (!pelicula) return <h2>Película no encontrada</h2>;
+    if (!pelicula) {
+        return (
+            <div style={{ textAlign: "center", marginTop: "50px" }}>
+                <h2>Pelicula no encontrada</h2>
+                <Link to="/" style={{ color: "#ffda79", fontWeight: "bold" }}>
+                    Volver al inicio
+                </Link>
+            </div>
+        );
+    }
 
     return (
         <div className="detail-container">
@@ -14,8 +24,15 @@ function CineDetail() {
 
             <div className="detail-info">
                 <h1>{pelicula.titulo}</h1>
-                <p><strong>Año:</strong> {pelicula.anio}</p>
-                <p><strong>Genero:</strong> {pelicula.genero}</p>
+                <p><strong>Genero:</strong> {pelicula.genero} </p>
+                <p><strong>Año</strong> {pelicula.anio} </p>
+                <p><strong>Descripcion:</strong></p>
+                <p> {pelicula.descripcion} </p>
+
+                <br />
+                <Link to="/" className="volver-btn">
+                    Volver
+                </Link>
             </div>
         </div>
     );
