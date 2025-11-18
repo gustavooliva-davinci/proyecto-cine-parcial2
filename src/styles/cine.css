@@ -96,3 +96,41 @@
   background: #ffeaa7;
   transform: scale(1.05);
 }
+
+/* Formulario */
+.formulario-cine {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 18px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.formulario-cine input,
+.formulario-cine textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+}
+
+.formulario-cine button {
+  background: #ffda79;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+.formulario-cine button:hover {
+  background: #ffeaa7;
+  transform: scale(1.05);
+}
