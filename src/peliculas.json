@@ -22,5 +22,29 @@
         "anio": 2022, 
         "genero": "Ciencia ficción",
         "imagen": "/imagenes/advengers_end_game.jpg"  
+    }, 
+    { 
+        "id": 504, 
+        "titulo": "Ready Player One", 
+        "descripcion": "Año 2045: el adolescente Wade Watts es solo una de las millones de personas que se evaden del sombrío mundo real para sumergirse en un mundo utópico virtual donde todo es posible: OASIS. Wade participa en la búsqueda del tesoro que el creador de este mundo imaginario dejó oculto en su obra. No obstante, hay gente muy peligrosa compitiendo contra él.",
+        "anio": 2018, 
+        "genero": "Ciencia ficción",
+        "imagen": "/imagenes/ready_player_one.jpg"  
+    }, 
+    { 
+        "id": 505, 
+        "titulo": "The Bourne Identity", 
+        "descripcion": "Un hombre es rescatado en el mar Mediterráneo con graves heridas y sin memoria. Pronto descubre que posee habilidades extraordinarias en combate y estrategia, lo que revela un pasado peligroso. Con la ayuda de Marie, emprende una búsqueda frenética para descubrir su identidad, mientras es perseguido por agentes secretos que quieren eliminarlo. A medida que se acerca a la verdad, Jason Bourne enfrenta una red de espionaje internacional y debe decidir entre huir o confrontar su oscuro pasado.",
+        "anio": 2002, 
+        "genero": "Accion",
+        "imagen": "/imagenes/bourne_identity.jpg"  
+    }, 
+    { 
+        "id": 507, 
+        "titulo": "Todo en todas partes al mismo tiempo", 
+        "descripcion": "Evelyn Wang, una mujer abrumada por problemas familiares y financieros, descubre que es la clave para salvar el multiverso. A través de saltos entre realidades paralelas, accede a versiones alternativas de sí misma, enfrentando habilidades insólitas y desafíos existenciales. Mientras lucha contra una fuerza que amenaza con destruirlo todo, debe reconciliarse con su esposo y su hija. La película combina acción, comedia y drama para explorar la identidad, el amor y el sentido de la vida en un caos infinito.",
+        "anio": 2022, 
+        "genero": "Ciencia ficción",
+        "imagen": "/imagenes/todo_en_todas_partes.jpg"  
     } 
 ]

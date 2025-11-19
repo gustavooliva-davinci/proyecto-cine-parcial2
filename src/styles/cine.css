@@ -83,17 +83,17 @@
 .volver-btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background: #ffda79;
   color: #000;
   border-radius: 10px;
-  font-weight: bold;
   text-decoration: none;
-  transition: 0.25s;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
 }
 
 .volver-btn:hover {
-  background: #ffeaa7;
+  background: #ffe9a9;
   transform: scale(1.05);
 }
 

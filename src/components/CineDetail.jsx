@@ -11,8 +11,8 @@ function CineDetail() {
         return (
             <div style={{ textAlign: "center", marginTop: "50px" }}>
                 <h2>Pelicula no encontrada</h2>
-                <Link to="/" style={{ color: "#ffda79", fontWeight: "bold" }}>
-                    Volver al inicio
+                <Link to="/cine" className="volver-btn">
+                    Volver al Catalogo
                 </Link>
             </div>
         );
@@ -30,7 +30,7 @@ function CineDetail() {
                 <p> {pelicula.descripcion} </p>
 
                 <br />
-                <Link to="/" className="volver-btn">
+                <Link to="/cine" className="volver-btn">
                     Volver
                 </Link>
             </div>
