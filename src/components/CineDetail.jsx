@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "../styles/cine.css";
 
@@ -6,6 +6,28 @@ function CineDetail() {
     const { id } = useParams();
     const [pelicula, setPelicula] = useState(null);
     const [cargando, setCargando] = useState(true);
+    const navigate = useNavigate();
+    
+    // Eliminar pelicula
+    const eliminarPelicula = async () => {
+        if (!window.confirm("¿Seguro que queres eliminar la pelicula?")) return;
+
+        try {
+            const response = await fetch(`http://localhost:3000/api/peliculas/${id}`, {
+                method: "DELETE",
+            });
+
+            if (response.ok){
+                alert("Película eliminada con éxito");
+                navigate("/");
+            } else {
+                alert("Error al eliminar la película");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Hubo un problema con el servidor");
+        }
+    };
 
     useEffect(() => {
         const cargarPelicula = async () => {
@@ -50,6 +72,15 @@ function CineDetail() {
                 <p><strong>Descripcion:</strong></p>
                 <p>{pelicula.descripcion}</p>
 
+                <br />
+                <button className="edit-btn" onClick={() => alert("Edición disponible solo en la pantalla principal")}>
+                    Editar pelicula
+                </button>
+
+                <button className="delete-btn" onClick={eliminarPelicula} style={{ background: "red", color: "white" }}>
+                    Eliminar pelicula
+                </button>
+                
                 <br />
                 <Link to="/" className="volver-btn">Volver</Link>
             </div>

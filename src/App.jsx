@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CineList from "./components/CineList";
 import CineDetail from "./components/CineDetail";
 import "./styles/styles.css";
+import "./styles/cine.css";
 
 function App() {
   return (

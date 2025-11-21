@@ -5,6 +5,7 @@ import "../styles/cine.css";
 function CineList() {
     const [peliculas, setPeliculas] = useState([]);
     const [cargando, setCargando] = useState(true);
+    const [peliculaEditar, setPeliculaEditar] = useState(null);
 
     const [form, setForm] = useState({
         titulo: "",
@@ -28,7 +29,7 @@ function CineList() {
 
     useEffect(() => {
         cargarPeliculas();
-    },[]);
+    }, []);
 
     // Cambios en el FORM
     const handleChange = (e) => {
@@ -107,7 +108,23 @@ function CineList() {
             console.error("Error al eliminar la pelicula:", error);
         }
     };
-    
+
+    // Editar pelicucla
+    const seleccionarPelicula = (peli) => {
+        setPeliculaEditar(peli);
+    };
+
+    const guardarEdicion = async () => {
+        await fetch(`http://localhost:3000/api/peliculas/${peliculaEditar.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(peliculaEditar),
+        });
+
+        setPeliculaEditar(null);
+        cargarPeliculas();
+    };
+
     // Render
     return (
         <>
@@ -154,23 +171,57 @@ function CineList() {
                 <button type="submit">Agregar Pelicula</button>
             </form>
 
+            {/* EDITAR */}
+            {peliculaEditar && (
+                <div className="edit-form">
+                    <h3>Editar película</h3>
+
+                    <input
+                        type="text"
+                        value={peliculaEditar.titulo}
+                        onChange={(e) =>
+                            setPeliculaEditar({ ...peliculaEditar, titulo: e.target.value })
+                        }
+                    />
+
+                    <textarea
+                        value={peliculaEditar.descripcion}
+                        onChange={(e) =>
+                            setPeliculaEditar({ ...peliculaEditar, descripcion: e.target.value })
+                        }
+                    />
+
+                    <input
+                        type="text"
+                        value={peliculaEditar.imagen}
+                        onChange={(e) =>
+                            setPeliculaEditar({ ...peliculaEditar, imagen: e.target.value })
+                        }
+                    />
+
+                    <button onClick={guardarEdicion}>Guardar</button>
+                    <button onClick={() => setPeliculaEditar(null)}>Cancelar</button>
+                </div>
+            )}
+
             {/* Listado */}
             {cargando ? (
-                <p>Cargando peliculas...</p>
+                <p>Cargando películas...</p>
             ) : (
                 <div className="grid-container">
                     {peliculas.map((peli) => (
-                        <div key={peli.id}>
-                            <h3>{peli.titulo}</h3>
-                            <p>{peli.descripcion}</p>
-                            <img src={peli.imagen} width="150" />
-
-                            <button onClick={() => eliminarPelicula(peli.id)}>
+                        <div className="card" key={peli.id}>
+                            <img className="card-image" src={peli.imagen} alt={peli.titulo} />
+                            <h3 className="card-title">{peli.titulo}</h3>
+                            <button className="delete-btn" onClick={() => eliminarPelicula(peli.id)} >
                                 Eliminar
+                            </button>
+                            <button className="edit-btn" onClick={() => seleccionarPelicula(peli)}>
+                                Editar
                             </button>
                         </div>
                     ))}
-                </div>
+                </div>  
             )}
         </>
     );
