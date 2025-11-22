@@ -1,50 +1,66 @@
-[ 
-    { 
-        "id": 501, 
-        "titulo": "Scott Pilgrim vs The World", 
-        "descripcion": "Scott Pilgrim es un joven músico canadiense que se enamora de la misteriosa Ramona Flowers. Para conquistarla, deberá enfrentarse a sus siete exnovios malvados en batallas épicas llenas de humor, acción y estética de videojuego. Con un estilo visual único, la película mezcla romance, comedia y peleas surrealistas, convirtiéndose en una experiencia vibrante y explosiva que celebra la cultura pop y los cómics.",
-        "anio": 2014, 
-        "genero": "Ciencia ficción",
-        "imagen": "/imagenes/scott_pilgrim.jpg" 
-    }, 
-    { 
-        "id": 502, 
-        "titulo": "Duro de Matar 4", 
-        "descripcion": "John McClane regresa para enfrentar un nuevo tipo de amenaza: un ciberataque que paraliza Estados Unidos. Con la ayuda de un joven hacker, deberá detener a un grupo de terroristas tecnológicos que buscan controlar todo el sistema digital del país. Explosiones, persecuciones y la clásica actitud desafiante de McClane hacen de esta entrega un thriller lleno de adrenalina, donde la acción se moderniza sin perder el espíritu de la saga.",
-        "anio": 2008, 
-        "genero": "Acción",
-        "imagen": "/imagenes/duro_de_matar_4.jpg" 
-    }, 
-    { 
-        "id": 503, 
-        "titulo": "Advengers End Game", 
-        "descripcion": "Tras el devastador chasquido de Thanos, los Vengadores restantes deben unirse para revertir la destrucción y salvar el universo. Con viajes en el tiempo, sacrificios heroicos y batallas colosales, la película culmina más de una década de historias interconectadas del Universo Marvel. “Endgame” es un épico cierre cargado de emoción, acción y despedidas memorables, que celebra la unión de héroes frente a lo imposible y marca un antes y un después en la historia del cine de superhéroes.",
-        "anio": 2022, 
-        "genero": "Ciencia ficción",
-        "imagen": "/imagenes/advengers_end_game.jpg"  
-    }, 
-    { 
-        "id": 504, 
-        "titulo": "Ready Player One", 
-        "descripcion": "Año 2045: el adolescente Wade Watts es solo una de las millones de personas que se evaden del sombrío mundo real para sumergirse en un mundo utópico virtual donde todo es posible: OASIS. Wade participa en la búsqueda del tesoro que el creador de este mundo imaginario dejó oculto en su obra. No obstante, hay gente muy peligrosa compitiendo contra él.",
-        "anio": 2018, 
-        "genero": "Ciencia ficción",
-        "imagen": "/imagenes/ready_player_one.jpg"  
-    }, 
-    { 
-        "id": 505, 
-        "titulo": "The Bourne Identity", 
-        "descripcion": "Un hombre es rescatado en el mar Mediterráneo con graves heridas y sin memoria. Pronto descubre que posee habilidades extraordinarias en combate y estrategia, lo que revela un pasado peligroso. Con la ayuda de Marie, emprende una búsqueda frenética para descubrir su identidad, mientras es perseguido por agentes secretos que quieren eliminarlo. A medida que se acerca a la verdad, Jason Bourne enfrenta una red de espionaje internacional y debe decidir entre huir o confrontar su oscuro pasado.",
-        "anio": 2002, 
-        "genero": "Accion",
-        "imagen": "/imagenes/bourne_identity.jpg"  
-    }, 
-    { 
-        "id": 507, 
-        "titulo": "Todo en todas partes al mismo tiempo", 
-        "descripcion": "Evelyn Wang, una mujer abrumada por problemas familiares y financieros, descubre que es la clave para salvar el multiverso. A través de saltos entre realidades paralelas, accede a versiones alternativas de sí misma, enfrentando habilidades insólitas y desafíos existenciales. Mientras lucha contra una fuerza que amenaza con destruirlo todo, debe reconciliarse con su esposo y su hija. La película combina acción, comedia y drama para explorar la identidad, el amor y el sentido de la vida en un caos infinito.",
-        "anio": 2022, 
-        "genero": "Ciencia ficción",
-        "imagen": "/imagenes/todo_en_todas_partes.jpg"  
-    } 
+[
+  {
+    "id": 501,
+    "titulo": "Scott Pilgrim vs The World",
+    "descripcion": "Scott Pilgrim es un joven músico canadiense que se enamora de la misteriosa Ramona Flowers. Para conquistarla, deberá enfrentarse a sus siete exnovios malvados en batallas épicas llenas de humor, acción y estética de videojuego. Con un estilo visual único, la película mezcla romance, comedia y peleas surrealistas, convirtiéndose en una experiencia vibrante y explosiva que celebra la cultura pop y los cómics.",
+    "anio": 2014,
+    "genero": "Ciencia ficción",
+    "imagen": "/imagenes/scott_pilgrim.jpg"
+  },
+  {
+    "id": 502,
+    "titulo": "Duro de Matar 4",
+    "descripcion": "John McClane regresa para enfrentar un nuevo tipo de amenaza: un ciberataque que paraliza Estados Unidos. Con la ayuda de un joven hacker, deberá detener a un grupo de terroristas tecnológicos que buscan controlar todo el sistema digital del país. Explosiones, persecuciones y la clásica actitud desafiante de McClane hacen de esta entrega un thriller lleno de adrenalina, donde la acción se moderniza sin perder el espíritu de la saga.",
+    "anio": 2008,
+    "genero": "Acción",
+    "imagen": "/imagenes/duro_de_matar_4.jpg"
+  },
+  {
+    "id": 503,
+    "titulo": "Advengers End Game",
+    "descripcion": "Tras el devastador chasquido de Thanos, los Vengadores restantes deben unirse para revertir la destrucción y salvar el universo. Con viajes en el tiempo, sacrificios heroicos y batallas colosales, la película culmina más de una década de historias interconectadas del Universo Marvel. “Endgame” es un épico cierre cargado de emoción, acción y despedidas memorables, que celebra la unión de héroes frente a lo imposible y marca un antes y un después en la historia del cine de superhéroes.",
+    "anio": 2022,
+    "genero": "Ciencia ficción",
+    "imagen": "/imagenes/advengers_end_game.jpg"
+  },
+  {
+    "id": 504,
+    "titulo": "Ready Player One",
+    "descripcion": "Año 2045: el adolescente Wade Watts es solo una de las millones de personas que se evaden del sombrío mundo real para sumergirse en un mundo utópico virtual donde todo es posible: OASIS. Wade participa en la búsqueda del tesoro que el creador de este mundo imaginario dejó oculto en su obra. No obstante, hay gente muy peligrosa compitiendo contra él.",
+    "anio": 2018,
+    "genero": "Ciencia ficción",
+    "imagen": "/imagenes/ready_player_one.jpg"
+  },
+  {
+    "id": 505,
+    "titulo": "The Bourne Identity",
+    "descripcion": "Un hombre es rescatado en el mar Mediterráneo con graves heridas y sin memoria. Pronto descubre que posee habilidades extraordinarias en combate y estrategia, lo que revela un pasado peligroso. Con la ayuda de Marie, emprende una búsqueda frenética para descubrir su identidad, mientras es perseguido por agentes secretos que quieren eliminarlo. A medida que se acerca a la verdad, Jason Bourne enfrenta una red de espionaje internacional y debe decidir entre huir o confrontar su oscuro pasado.",
+    "anio": 2002,
+    "genero": "Accion",
+    "imagen": "/imagenes/bourne_identity.jpg"
+  },
+  {
+    "id": 507,
+    "titulo": "Todo en todas partes al mismo tiempo",
+    "descripcion": "Evelyn Wang, una mujer abrumada por problemas familiares y financieros, descubre que es la clave para salvar el multiverso. A través de saltos entre realidades paralelas, accede a versiones alternativas de sí misma, enfrentando habilidades insólitas y desafíos existenciales. Mientras lucha contra una fuerza que amenaza con destruirlo todo, debe reconciliarse con su esposo y su hija. La película combina acción, comedia y drama para explorar la identidad, el amor y el sentido de la vida en un caos infinito.",
+    "anio": 2022,
+    "genero": "Ciencia ficción",
+    "imagen": "/imagenes/todo_en_todas_partes.jpg"
+  },
+  {
+    "titulo": "Akira",
+    "genero": "Anime",
+    "anio": "1999",
+    "descripcion": "Pelicula Epica, agregada desde el front",
+    "imagen": "https://i.redd.it/j7o826q9j5x81.jpg",
+    "id": 509
+  },
+  {
+    "titulo": "Batman Inicia",
+    "genero": "Accion",
+    "anio": "2005",
+    "descripcion": "Pelicula cargada desde el front",
+    "imagen": "https://images.justwatch.com/poster/151334094/s718/batman-begins.jpg",
+    "id": 510
+  }
 ]

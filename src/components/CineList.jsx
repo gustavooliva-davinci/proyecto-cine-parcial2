@@ -117,10 +117,10 @@ function CineList() {
                     value={form.anio}
                     onChange={handleChange}
                 />
-                <input
-                    type="text"
+                <textarea
                     name="imagen"
-                    placeholder="URL de la imagen *"
+                    placeholder="URL de la imagen (click derecho y seleccionar la opción 'Copiar dirección de la imagen')*"
+                    rows="3" // Define la altura mínima a una fila
                     value={form.imagen}
                     onChange={handleChange}
                 />
@@ -158,7 +158,7 @@ function CineList() {
                             <img className="card-image" src={peli.imagen} alt={peli.titulo} />
                             <h3 className="card-title">{peli.titulo}</h3>
                             <div className="card-actions">
-                                <button className="delete-btn" onClick={() => handleEliminarPelicula(peli.id)} >
+                                <button className="delete-btn" onClick={() => handleEliminarPelicula(parseInt(peli.id))} >
                                     Eliminar
                                 </button>
                                 <button className="edit-btn" onClick={() => seleccionarPelicula(peli)}>
